@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Bree+Serif|Chicle|DM+Serif+Text|
+    Mallanna|Neuton|Noto+Serif&display=swap" rel="stylesheet">
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+
+.fullscreen-bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 75px;
+    font-family: Noto Serif;
+    color:black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 9.5%;
+    left: 38%;
+    text-shadow: 5px 5px 10px #3d3d5c;
+}
+
+.text{
+    font-family: Noto Serif;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%
+}
+
+.container {
+  border-radius: 5px;
+  padding: 80px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */  
+  border: none;
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0px; /* Add a top margin */
+  margin-bottom: 0px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ffff00;
+  color:black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ffff00
+}
+
+.footer{
+    width: 45%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 27.5%;
+    display: block;
+    background-color: black;
+    opacity: 0.5;
+}
+
+body{
+    background-color: black;
+}
+
+.navigation{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 87%;
+ }
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 90px;
+    margin-left: 80px;
+
+    position: relative;
+}
+
+nav a {
+    color: #e6e6ff;
+    text-decoration: none;
+    font-family: Molle;
+    font-size: 40px;
+}
+
+nav a:hover {
+    color:  #ffff00;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="fullscreen-bg">
+    <video autoplay loop muted class="fullscreen-bg__video">
+        <source src="flippedClouds.mp4" type="video/mp4">
+        </video> 
+</div>
+
+<center>
+<h1>CONTACT</h1>
+<div class= "footer">
+    <span class= "text">
+       Kimberly is waiting for your email. 
+    </span>
+
+    <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+    <p><div class= "navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">&#8592; home</a></li>
+                    <li><a href="AboutPage.html">about&#8594;</a></li>
+                </ul>
+            </nav>
+     </div></p>
+        
+</div>
+</center>
+
+</body>
+
+</html>
